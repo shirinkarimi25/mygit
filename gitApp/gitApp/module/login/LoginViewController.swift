@@ -10,6 +10,16 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var viewEnter: UIView!
+    @IBOutlet weak var imageEnter: UIImageView!
+    @IBOutlet weak var labelLoginTitle: UILabel!
+    @IBOutlet weak var labelGuide: UILabel!
+    @IBOutlet weak var viewCountryPicker: UIView!
+    @IBOutlet weak var imageFlag: UIImageView!
+    @IBOutlet weak var labelCountryName: UILabel!
+    @IBOutlet weak var viewPhoneNubber: UIView!
+    @IBOutlet weak var textFieldPhone: UILabel!
+    @IBOutlet weak var buttonSenteCode: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 

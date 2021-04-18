@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="q4K-Hl-pIx">
             <objects>
-                <viewController id="1Bu-3r-FjP" sceneMemberID="viewController">
+                <viewController id="1Bu-3r-FjP" customClass="LoginViewController" customModule="gitApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oun-JA-hcw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,9 +60,15 @@
                                             <constraint firstAttribute="width" constant="26" id="XZN-DU-aFA"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ایران" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwF-Ec-82b">
-                                        <rect key="frame" x="206" y="10" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nX9-UX-wdH">
+                                        <rect key="frame" x="238.5" y="7" width="0.5" height="27"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="0.5" id="BxK-TH-pRQ"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ایران" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwF-Ec-82b">
+                                        <rect key="frame" x="196.5" y="10" width="30.5" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -71,19 +77,63 @@
                                 <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="10U-Lb-MNt"/>
+                                    <constraint firstItem="jwF-Ec-82b" firstAttribute="centerY" secondItem="4uv-mT-vsf" secondAttribute="centerY" id="BV3-OH-CLi"/>
                                     <constraint firstItem="KZQ-qc-zyU" firstAttribute="centerY" secondItem="4uv-mT-vsf" secondAttribute="centerY" id="Ok7-xE-fGZ"/>
                                     <constraint firstAttribute="height" constant="41" id="Qit-Mp-1gd"/>
                                     <constraint firstAttribute="trailing" secondItem="KZQ-qc-zyU" secondAttribute="trailing" constant="6.5999999999999996" id="Vl3-wl-Hd5"/>
+                                    <constraint firstItem="nX9-UX-wdH" firstAttribute="leading" secondItem="jwF-Ec-82b" secondAttribute="trailing" constant="11.5" id="ZMN-Td-OoJ"/>
+                                    <constraint firstItem="KZQ-qc-zyU" firstAttribute="leading" secondItem="nX9-UX-wdH" secondAttribute="trailing" constant="8.5" id="gMm-kv-zWe"/>
+                                    <constraint firstItem="nX9-UX-wdH" firstAttribute="height" secondItem="KZQ-qc-zyU" secondAttribute="height" multiplier="1.58824" id="lsk-vu-cQ5"/>
+                                    <constraint firstItem="nX9-UX-wdH" firstAttribute="centerY" secondItem="4uv-mT-vsf" secondAttribute="centerY" id="p46-L1-XLh"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXK-jB-mBO">
                                 <rect key="frame" x="67" y="393.5" width="280" height="42"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone(1)" translatesAutoresizingMaskIntoConstraints="NO" id="BVC-bx-iW6">
+                                        <rect key="frame" x="254" y="9.5" width="14" height="23"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شماره موبایل" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZv-Cx-w3x">
+                                        <rect key="frame" x="20" y="15" width="207.5" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHF-Pt-XeF">
+                                        <rect key="frame" x="240" y="11.5" width="0.5" height="19"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="0.5" id="MPu-cQ-Nku"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="BVC-bx-iW6" firstAttribute="leading" secondItem="oHF-Pt-XeF" secondAttribute="trailing" constant="13.5" id="1IM-JQ-GBv"/>
+                                    <constraint firstItem="BVC-bx-iW6" firstAttribute="leading" secondItem="AXK-jB-mBO" secondAttribute="leading" constant="254" id="3lt-WZ-GFP"/>
+                                    <constraint firstItem="kZv-Cx-w3x" firstAttribute="centerY" secondItem="AXK-jB-mBO" secondAttribute="centerY" id="F9E-ym-po8"/>
                                     <constraint firstAttribute="width" constant="280" id="TSJ-k0-S7S"/>
+                                    <constraint firstAttribute="trailing" secondItem="BVC-bx-iW6" secondAttribute="trailing" constant="12" id="UbE-eH-bXL"/>
+                                    <constraint firstItem="kZv-Cx-w3x" firstAttribute="leading" secondItem="AXK-jB-mBO" secondAttribute="leading" constant="20" id="V6y-go-jcW"/>
+                                    <constraint firstItem="oHF-Pt-XeF" firstAttribute="leading" secondItem="kZv-Cx-w3x" secondAttribute="trailing" constant="12.5" id="YaK-2B-1bT"/>
+                                    <constraint firstItem="oHF-Pt-XeF" firstAttribute="centerY" secondItem="AXK-jB-mBO" secondAttribute="centerY" id="azT-XG-J8X"/>
+                                    <constraint firstItem="BVC-bx-iW6" firstAttribute="centerY" secondItem="AXK-jB-mBO" secondAttribute="centerY" id="gvh-gK-e6b"/>
                                     <constraint firstAttribute="height" constant="42" id="h9q-lY-M7b"/>
+                                    <constraint firstItem="oHF-Pt-XeF" firstAttribute="height" secondItem="BVC-bx-iW6" secondAttribute="height" multiplier="0.826087" id="lCp-g9-IEb"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRU-Nl-jZI">
+                                <rect key="frame" x="123.5" y="487.5" width="167" height="33"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="QTe-mZ-j02"/>
+                                    <constraint firstAttribute="height" constant="33" id="S9t-Bm-XEq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="ارسال کد">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -92,7 +142,9 @@
                             <constraint firstItem="f3t-7V-mxk" firstAttribute="centerX" secondItem="oun-JA-hcw" secondAttribute="centerX" id="EyL-yM-cOb"/>
                             <constraint firstItem="D17-sx-AtA" firstAttribute="centerX" secondItem="oun-JA-hcw" secondAttribute="centerX" id="GNZ-8j-gwE"/>
                             <constraint firstItem="f3t-7V-mxk" firstAttribute="top" secondItem="bcR-86-qv0" secondAttribute="bottom" constant="13" id="GwR-JV-S1P"/>
+                            <constraint firstItem="cRU-Nl-jZI" firstAttribute="top" secondItem="AXK-jB-mBO" secondAttribute="bottom" constant="52" id="MAL-sA-1VQ"/>
                             <constraint firstItem="AXK-jB-mBO" firstAttribute="centerX" secondItem="oun-JA-hcw" secondAttribute="centerX" id="XpF-qt-SGR"/>
+                            <constraint firstItem="cRU-Nl-jZI" firstAttribute="centerX" secondItem="oun-JA-hcw" secondAttribute="centerX" id="Xuf-qj-Y94"/>
                             <constraint firstItem="AXK-jB-mBO" firstAttribute="top" secondItem="4uv-mT-vsf" secondAttribute="bottom" constant="15" id="awy-YX-mXe"/>
                             <constraint firstItem="4uv-mT-vsf" firstAttribute="top" secondItem="D17-sx-AtA" secondAttribute="bottom" constant="25" id="oVJ-xa-MGe"/>
                             <constraint firstItem="4uv-mT-vsf" firstAttribute="centerX" secondItem="oun-JA-hcw" secondAttribute="centerX" id="tIt-w0-Ntb"/>
@@ -100,6 +152,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nmV-Xh-pxg"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonSenteCode" destination="cRU-Nl-jZI" id="0c7-rO-XSX"/>
+                        <outlet property="imageEnter" destination="7SO-ae-Kxw" id="cd0-rB-ayE"/>
+                        <outlet property="imageFlag" destination="KZQ-qc-zyU" id="zOS-BK-xt5"/>
+                        <outlet property="labelCountryName" destination="jwF-Ec-82b" id="IZE-uz-zil"/>
+                        <outlet property="labelGuide" destination="D17-sx-AtA" id="oML-xa-LQ8"/>
+                        <outlet property="labelLoginTitle" destination="f3t-7V-mxk" id="h67-oJ-HJR"/>
+                        <outlet property="textFieldPhone" destination="kZv-Cx-w3x" id="fdk-DU-9qF"/>
+                        <outlet property="viewCountryPicker" destination="4uv-mT-vsf" id="h9X-X3-sWJ"/>
+                        <outlet property="viewEnter" destination="bcR-86-qv0" id="b1g-hc-XUt"/>
+                        <outlet property="viewPhoneNubber" destination="AXK-jB-mBO" id="vzO-an-uco"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGT-kA-J7l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,5 +173,6 @@
     <resources>
         <image name="enter" width="85" height="85"/>
         <image name="iran" width="26" height="17"/>
+        <image name="phone(1)" width="15" height="23"/>
     </resources>
 </document>
