@@ -18,6 +18,20 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+    
+    <key>UIAppFonts</key>
+    <array>
+     <string>IRANYekanMobileBlack.ttf</string>
+     <string>IRANYekanMobileBold.ttf</string>
+     <string>IRANYekanMobileExtraBold.ttf</string>
+     <string>IRANYekanMobileExtraBlack.ttf</string>
+     <string>IRANYekanMobileLight.ttf</string>
+     <string>IRANYekanMobileRegular.ttf</string>
+     <string>IRANYekanMobileMedium.ttf</string>
+     <string>IRANYekanMobileThin.ttf</string>
+    </array>
+    
+    
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>

@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="q4K-Hl-pIx">
             <objects>
-                <viewController id="1Bu-3r-FjP" customClass="LoginViewController" customModule="gitApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="1Bu-3r-FjP" customClass="LoginViewController" customModule="gitApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oun-JA-hcw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,13 +35,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ورود به برنامه" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3t-7V-mxk">
-                                <rect key="frame" x="162" y="248" width="90" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="167.5" y="248" width="79" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جهت ورود به برنامه شماره موبایل خود را وارد نمایید" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D17-sx-AtA">
-                                <rect key="frame" x="127" y="273.5" width="160" height="39"/>
+                                <rect key="frame" x="127" y="273" width="160" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="JeF-uV-QI4"/>
                                     <constraint firstAttribute="height" constant="39" id="RCp-gi-9tG"/>
@@ -51,7 +51,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uv-mT-vsf">
-                                <rect key="frame" x="67" y="337.5" width="280" height="41"/>
+                                <rect key="frame" x="67" y="337" width="280" height="41"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iran" translatesAutoresizingMaskIntoConstraints="NO" id="KZQ-qc-zyU">
                                         <rect key="frame" x="247.5" y="12" width="26" height="17"/>
@@ -88,7 +88,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXK-jB-mBO">
-                                <rect key="frame" x="67" y="393.5" width="280" height="42"/>
+                                <rect key="frame" x="67" y="393" width="280" height="42"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone(1)" translatesAutoresizingMaskIntoConstraints="NO" id="BVC-bx-iW6">
                                         <rect key="frame" x="254" y="9.5" width="14" height="23"/>
@@ -123,7 +123,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRU-Nl-jZI">
-                                <rect key="frame" x="123.5" y="487.5" width="167" height="33"/>
+                                <rect key="frame" x="123.5" y="487" width="167" height="33"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="167" id="QTe-mZ-j02"/>
@@ -133,6 +133,9 @@
                                 <state key="normal" title="ارسال کد">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendCodePressed:" destination="1Bu-3r-FjP" eventType="touchUpInside" id="2Em-fM-3d4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

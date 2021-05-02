@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56FA9AB5F161F7E785363809 /* Pods_gitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E4E9C389FE822BB7E35BB4 /* Pods_gitApp.framework */; };
 		665205FA262C391B00FFB7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665205F9262C391B00FFB7C4 /* AppDelegate.swift */; };
 		665205FC262C391B00FFB7C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665205FB262C391B00FFB7C4 /* SceneDelegate.swift */; };
 		665205FE262C391B00FFB7C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665205FD262C391B00FFB7C4 /* ViewController.swift */; };
@@ -16,9 +17,21 @@
 		66520609262C391D00FFB7C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66520607262C391D00FFB7C4 /* LaunchScreen.storyboard */; };
 		66520613262C398C00FFB7C4 /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66520612262C398C00FFB7C4 /* login.storyboard */; };
 		66520616262C3A4300FFB7C4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66520615262C3A4300FFB7C4 /* LoginViewController.swift */; };
+		665E27332630AD7D0073FEB8 /* IRANYekanMobileMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 665E272B2630AD7D0073FEB8 /* IRANYekanMobileMedium.ttf */; };
+		665E27342630AD7D0073FEB8 /* IRANYekanMobileBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 665E272C2630AD7D0073FEB8 /* IRANYekanMobileBold.ttf */; };
+		665E27352630AD7D0073FEB8 /* IRANYekanMobileRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 665E272D2630AD7D0073FEB8 /* IRANYekanMobileRegular.ttf */; };
+		665E27362630AD7D0073FEB8 /* IRANYekanMobileThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 665E272E2630AD7D0073FEB8 /* IRANYekanMobileThin.ttf */; };
+		665E27372630AD7D0073FEB8 /* IRANYekanMobileExtraBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 665E272F2630AD7D0073FEB8 /* IRANYekanMobileExtraBlack.ttf */; };
+		665E27382630AD7D0073FEB8 /* IRANYekanMobileExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 665E27302630AD7D0073FEB8 /* IRANYekanMobileExtraBold.ttf */; };
+		665E27392630AD7D0073FEB8 /* IRANYekanMobileLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 665E27312630AD7D0073FEB8 /* IRANYekanMobileLight.ttf */; };
+		665E273A2630AD7D0073FEB8 /* IRANYekanMobileBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 665E27322630AD7D0073FEB8 /* IRANYekanMobileBlack.ttf */; };
+		665E273D2630B8560073FEB8 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665E273C2630B8560073FEB8 /* FontHelper.swift */; };
+		66E9D10026349F9400D86071 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9D0FF26349F9400D86071 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43E4E9C389FE822BB7E35BB4 /* Pods_gitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1ECB12DAB08D5F6CA0A0B9 /* Pods-gitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gitApp.debug.xcconfig"; path = "Target Support Files/Pods-gitApp/Pods-gitApp.debug.xcconfig"; sourceTree = "<group>"; };
 		665205F6262C391B00FFB7C4 /* gitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		665205F9262C391B00FFB7C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		665205FB262C391B00FFB7C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +43,17 @@
 		6652060A262C391D00FFB7C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66520612262C398C00FFB7C4 /* login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
 		66520615262C3A4300FFB7C4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		665E272B2630AD7D0073FEB8 /* IRANYekanMobileMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = IRANYekanMobileMedium.ttf; path = ../../../../../../Downloads/IRANYekanMobileMedium.ttf; sourceTree = "<group>"; };
+		665E272C2630AD7D0073FEB8 /* IRANYekanMobileBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = IRANYekanMobileBold.ttf; path = ../../../../../../Downloads/IRANYekanMobileBold.ttf; sourceTree = "<group>"; };
+		665E272D2630AD7D0073FEB8 /* IRANYekanMobileRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = IRANYekanMobileRegular.ttf; path = ../../../../../../Downloads/IRANYekanMobileRegular.ttf; sourceTree = "<group>"; };
+		665E272E2630AD7D0073FEB8 /* IRANYekanMobileThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = IRANYekanMobileThin.ttf; path = ../../../../../../Downloads/IRANYekanMobileThin.ttf; sourceTree = "<group>"; };
+		665E272F2630AD7D0073FEB8 /* IRANYekanMobileExtraBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = IRANYekanMobileExtraBlack.ttf; path = ../../../../../../Downloads/IRANYekanMobileExtraBlack.ttf; sourceTree = "<group>"; };
+		665E27302630AD7D0073FEB8 /* IRANYekanMobileExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = IRANYekanMobileExtraBold.ttf; path = ../../../../../../Downloads/IRANYekanMobileExtraBold.ttf; sourceTree = "<group>"; };
+		665E27312630AD7D0073FEB8 /* IRANYekanMobileLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = IRANYekanMobileLight.ttf; path = ../../../../../../Downloads/IRANYekanMobileLight.ttf; sourceTree = "<group>"; };
+		665E27322630AD7D0073FEB8 /* IRANYekanMobileBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = IRANYekanMobileBlack.ttf; path = ../../../../../../Downloads/IRANYekanMobileBlack.ttf; sourceTree = "<group>"; };
+		665E273C2630B8560073FEB8 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
+		66E9D0FF26349F9400D86071 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		95D66D56DB59661AFA26058A /* Pods-gitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gitApp.release.xcconfig"; path = "Target Support Files/Pods-gitApp/Pods-gitApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56FA9AB5F161F7E785363809 /* Pods_gitApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1115A3D4B4267D85D1E4AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E4E9C389FE822BB7E35BB4 /* Pods_gitApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		665205ED262C391B00FFB7C4 = {
 			isa = PBXGroup;
 			children = (
 				665205F8262C391B00FFB7C4 /* gitApp */,
 				665205F7262C391B00FFB7C4 /* Products */,
+				F993CDFBE928ED10FB46B112 /* Pods */,
+				2F1115A3D4B4267D85D1E4AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +97,9 @@
 		665205F8262C391B00FFB7C4 /* gitApp */ = {
 			isa = PBXGroup;
 			children = (
+				66E9D0FE26349F2900D86071 /* Extension */,
+				665E273B2630B8180073FEB8 /* utility */,
+				665E27222630ACD60073FEB8 /* fonts */,
 				66520614262C39BC00FFB7C4 /* models */,
 				66520610262C392A00FFB7C4 /* module */,
 				665205F9262C391B00FFB7C4 /* AppDelegate.swift */,
@@ -100,6 +138,47 @@
 			path = models;
 			sourceTree = "<group>";
 		};
+		665E27222630ACD60073FEB8 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				665E27322630AD7D0073FEB8 /* IRANYekanMobileBlack.ttf */,
+				665E272C2630AD7D0073FEB8 /* IRANYekanMobileBold.ttf */,
+				665E272F2630AD7D0073FEB8 /* IRANYekanMobileExtraBlack.ttf */,
+				665E27302630AD7D0073FEB8 /* IRANYekanMobileExtraBold.ttf */,
+				665E27312630AD7D0073FEB8 /* IRANYekanMobileLight.ttf */,
+				665E272B2630AD7D0073FEB8 /* IRANYekanMobileMedium.ttf */,
+				665E272D2630AD7D0073FEB8 /* IRANYekanMobileRegular.ttf */,
+				665E272E2630AD7D0073FEB8 /* IRANYekanMobileThin.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		665E273B2630B8180073FEB8 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				665E273C2630B8560073FEB8 /* FontHelper.swift */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		66E9D0FE26349F2900D86071 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				66E9D0FF26349F9400D86071 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F993CDFBE928ED10FB46B112 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B1ECB12DAB08D5F6CA0A0B9 /* Pods-gitApp.debug.xcconfig */,
+				95D66D56DB59661AFA26058A /* Pods-gitApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6652060D262C391D00FFB7C4 /* Build configuration list for PBXNativeTarget "gitApp" */;
 			buildPhases = (
+				587F5065336EBBA9661C9D49 /* [CP] Check Pods Manifest.lock */,
 				665205F2262C391B00FFB7C4 /* Sources */,
 				665205F3262C391B00FFB7C4 /* Frameworks */,
 				665205F4262C391B00FFB7C4 /* Resources */,
+				75C498930C7F0E9852E1E650 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,20 +239,72 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665E27362630AD7D0073FEB8 /* IRANYekanMobileThin.ttf in Resources */,
 				66520613262C398C00FFB7C4 /* login.storyboard in Resources */,
+				665E27392630AD7D0073FEB8 /* IRANYekanMobileLight.ttf in Resources */,
 				66520609262C391D00FFB7C4 /* LaunchScreen.storyboard in Resources */,
+				665E27372630AD7D0073FEB8 /* IRANYekanMobileExtraBlack.ttf in Resources */,
+				665E27342630AD7D0073FEB8 /* IRANYekanMobileBold.ttf in Resources */,
+				665E27352630AD7D0073FEB8 /* IRANYekanMobileRegular.ttf in Resources */,
+				665E27332630AD7D0073FEB8 /* IRANYekanMobileMedium.ttf in Resources */,
 				66520606262C391D00FFB7C4 /* Assets.xcassets in Resources */,
 				66520601262C391B00FFB7C4 /* Main.storyboard in Resources */,
+				665E27382630AD7D0073FEB8 /* IRANYekanMobileExtraBold.ttf in Resources */,
+				665E273A2630AD7D0073FEB8 /* IRANYekanMobileBlack.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		587F5065336EBBA9661C9D49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gitApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75C498930C7F0E9852E1E650 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gitApp/Pods-gitApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gitApp/Pods-gitApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gitApp/Pods-gitApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		665205F2262C391B00FFB7C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665E273D2630B8560073FEB8 /* FontHelper.swift in Sources */,
+				66E9D10026349F9400D86071 /* UIView+Extension.swift in Sources */,
 				66520604262C391B00FFB7C4 /* gitApp.xcdatamodeld in Sources */,
 				665205FE262C391B00FFB7C4 /* ViewController.swift in Sources */,
 				665205FA262C391B00FFB7C4 /* AppDelegate.swift in Sources */,
@@ -318,6 +451,7 @@
 		};
 		6652060E262C391D00FFB7C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B1ECB12DAB08D5F6CA0A0B9 /* Pods-gitApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -335,6 +469,7 @@
 		};
 		6652060F262C391D00FFB7C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D66D56DB59661AFA26058A /* Pods-gitApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

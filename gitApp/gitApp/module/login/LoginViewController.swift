@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CountryPickerView
 
 class LoginViewController: UIViewController {
+   
+    
 
     @IBOutlet weak var viewEnter: UIView!
     @IBOutlet weak var imageEnter: UIImageView!
@@ -20,21 +23,71 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var viewPhoneNubber: UIView!
     @IBOutlet weak var textFieldPhone: UILabel!
     @IBOutlet weak var buttonSenteCode: UIButton!
+    
+    let countryPickerView = CountryPickerView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        initFonts()
+        initUI()
+        
+        countryPickerView.delegate = self
+        countryPickerView.dataSource = self
+        
+        let gesturCounntryView = UITapGestureRecognizer(target: self, action:#selector(countryPickerTapped(_:)))
+        viewCountryPicker.addGestureRecognizer(gesturCounntryView)
+        
     }
     
+  
+    
+    func initUI() {
 
-    /*
-    // MARK: - Navigation
+        viewEnter.makeCircle()
+        viewPhoneNubber.cornerRadius()
+        viewCountryPicker.cornerRadius()
+        buttonSenteCode.cornerRadius()
+        
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        view.backgroundColor = UIColor(named: "darkWithe")
+        viewEnter.backgroundColor = UIColor(named: "niceGray")
+        buttonSenteCode.backgroundColor = UIColor(named: "colorButton")
+        viewPhoneNubber.backgroundColor = UIColor.white
+        viewCountryPicker.backgroundColor = UIColor.white
     }
-    */
-
+    
+    func initFonts() {
+        
+        labelLoginTitle.font = FontHeloer.bold(size: 16)
+        labelGuide.font = FontHeloer.Light(size: 14)
+        labelCountryName.font = FontHeloer.bold(size: 12)
+        textFieldPhone.font = FontHeloer.Medium(size: 10)
+        buttonSenteCode.titleLabel?.font = FontHeloer.bold(size: 14)
+    }
+    
+    @IBAction func sendCodePressed(_ sender: Any) {
+        
+    }
+    
+    @objc func countryPickerTapped(_: UITapGestureRecognizer){
+          countryPickerView.showCountriesList(from: self)
+      }
+    
+    
 }
+
+extension LoginViewController:CountryPickerViewDelegate, CountryPickerViewDataSource {
+    
+    func countryPickerView(_ countryPickerView: CountryPickerView, didSelectCountry country: Country) {
+        print(country)
+        labelCountryName.text = country.name
+        imageFlag.image = country.flag
+        
+    }
+    
+    
+    
+}
+
+
